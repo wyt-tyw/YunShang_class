@@ -1,0 +1,31 @@
+// 渐变进入的过渡动画效果
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+// 渐变进入前跟离开后的效果
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// 左边进入的过渡动画效果
+.left-in-enter-active,
+.left-in-leave-active {
+  transition: all 0.5s ease;
+}
+// 左边进入跟离开后的效果
+.left-in-enter-from,
+.left-in-leave-to {
+  transform: translateX(-100%);
+}
+// 缩放进入-- sacle ---
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+// 从 0.5 大小开始缩放到默认大小-- sacle ---
+.scale-enter-from,
+.scale-leave-to {
+  transform: scale(0.5);
+}
